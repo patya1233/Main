@@ -2,16 +2,20 @@ local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 121107
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
-    -- ฟังก์ชันเตะผู้เล่น
-function kickPlayer(player)
-    player:Kick("สคริปต์ปิดอัพเดท")
+-- สคริปต์ใน Roblox
+
+local Players = game:GetService("Players")
+
+-- ฟังก์ชันสำหรับไล่ผู้เล่น
+local function kickPlayer(player, errorCode)
+    -- ไล่ผู้เล่นออกพร้อมข้อความ error code
+    player:Kick("Update script")
 end
 
--- เหตุการณ์เมื่อผู้เล่นเข้าร่วมเกม
-game.Players.PlayerAdded:Connect(function(player)
-    wait(0) -- รอเวลา 5 วินาทีเพื่อเตะ
-    kickPlayer(player)
-end)
+-- ตัวอย่างการไล่ผู้เล่นทุกคนออกจากเกมพร้อม error code
+for _, player in pairs(Players:GetPlayers()) do
+    kickPlayer(player, 267) -- ใส่ error code ที่ต้องการ เช่น 1234
+end
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
 else
     print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
