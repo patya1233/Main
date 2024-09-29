@@ -11,7 +11,7 @@ else
     print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
 end
 
-local allowedPlaceIds = {6243699076, 9876543210} -- ใส่ Place ID ของแมพที่ต้องการ
+local allowedPlaceIds = {6243699076, 6296321810, 6301638949, 6373539583, 6406571212, 6425178683, 6472459099, 6682163754, 6682164423} -- ใส่ Place ID ของแมพที่ต้องการ
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
