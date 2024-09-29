@@ -1,0 +1,17 @@
+local allowedPlaceIds = {1234567890, 9876543210} -- ใส่ Place ID ของแมพที่ต้องการ
+
+if table.find(allowedPlaceIds, game.PlaceId) then
+    print("รันสคริปต์ในแมพที่ถูกต้อง")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
+else
+    print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
+end
+
+local allowedPlaceIds = {1234567890, 9876543210} -- ใส่ Place ID ของแมพที่ต้องการ
+
+if table.find(allowedPlaceIds, game.PlaceId) then
+    print("รันสคริปต์ในแมพที่ถูกต้อง")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/Mimic/refs/heads/main/fack%20hub"))()
+else
+    print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
+end
