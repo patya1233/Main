@@ -2,7 +2,17 @@ local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 121107
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
+    -- ฟังก์ชันเตะผู้เล่น
+function kickPlayer(player)
+    player:Kick("สคริปต์ปิดอัพเดท")
+end
+
+-- เหตุการณ์เมื่อผู้เล่นเข้าร่วมเกม
+game.Players.PlayerAdded:Connect(function(player)
+    wait(0) -- รอเวลา 5 วินาทีเพื่อเตะ
+    kickPlayer(player)
+end)
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
 else
     print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
 end
