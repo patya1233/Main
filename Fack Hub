@@ -1,4 +1,4 @@
-local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 12110761101 ,12985720842} -- ใส่ Place ID ของแมพที่ต้องการ
+local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 12110761101 , 12985720842} -- ใส่ Place ID ของแมพที่ต้องการ
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
