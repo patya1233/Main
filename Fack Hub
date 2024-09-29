@@ -2,21 +2,11 @@ local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 121107
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
--- สคริปต์ใน Roblox
+-- local player = game.Players.LocalPlayer
 
-local Players = game:GetService("Players")
-
--- ฟังก์ชันสำหรับไล่ผู้เล่น
-local function kickPlayer(player, errorCode)
-    -- ไล่ผู้เล่นออกพร้อมข้อความ error code
-    player:Kick("Update script")
-end
-
--- ตัวอย่างการไล่ผู้เล่นทุกคนออกจากเกมพร้อม error code
-for _, player in pairs(Players:GetPlayers()) do
-    kickPlayer(player, 267) -- ใส่ error code ที่ต้องการ เช่น 1234
-end
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
+-- ไล่ผู้เล่นที่รันสคริปต์ออกพร้อมข้อความ "Update script"
+-- player:Kick("Update script")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
 else
     print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
 end
@@ -25,6 +15,10 @@ local allowedPlaceIds = {6243699076, 9876543210} -- ใส่ Place ID ของ
 
 if table.find(allowedPlaceIds, game.PlaceId) then
     print("รันสคริปต์ในแมพที่ถูกต้อง")
+-- local player = game.Players.LocalPlayer
+
+-- ไล่ผู้เล่นที่รันสคริปต์ออกพร้อมข้อความ "Update script"
+-- player:Kick("Update script")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/Mimic/refs/heads/main/fack%20hub"))()
 else
     print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
