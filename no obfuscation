@@ -1,1 +1,25 @@
+local allowedPlaceIds = {6891230984, 13747290026, 7146291810, 9896837224, 12110761101 , 12985720842} -- ใส่ Place ID ของแมพที่ต้องการ
 
+if table.find(allowedPlaceIds, game.PlaceId) then
+    print("รันสคริปต์ในแมพที่ถูกต้อง")
+-- local player = game.Players.LocalPlayer
+
+-- ไล่ผู้เล่นที่รันสคริปต์ออกพร้อมข้อความ "Update script"
+-- player:Kick("Update script")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/geisha/refs/heads/main/fack%20hub"))()
+else
+    print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
+end
+
+local allowedPlaceIds = {6243699076, 6296321810, 6301638949, 6373539583, 6406571212, 6425178683, 6472459099, 6682163754, 6682164423} -- ใส่ Place ID ของแมพที่ต้องการ
+
+if table.find(allowedPlaceIds, game.PlaceId) then
+    print("รันสคริปต์ในแมพที่ถูกต้อง")
+-- local player = game.Players.LocalPlayer
+
+-- ไล่ผู้เล่นที่รันสคริปต์ออกพร้อมข้อความ "Update script"
+-- player:Kick("Update script")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/patya1233/Mimic/refs/heads/main/fack%20hub"))()
+else
+    print("ไม่อนุญาตให้รันสคริปต์ในแมพนี้")
+end
